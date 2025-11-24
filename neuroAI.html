@@ -1,0 +1,157 @@
+<div class="team-page-outer">
+    <style>
+    :root{
+      --bg:#f6f7f8; --card:#ffffff; --ink:#1f2937; --muted:#6b7280;
+      --brand:#0f766e; --line:#e5e7eb; --maxw:1200px;
+    }
+    .team-page{background:var(--bg); color:var(--ink); padding:24px; border:1px solid var(--line); border-radius:10px; max-width:var(--maxw); margin:0 auto;}
+    .team-page .title{font-size:clamp(1.6rem,2.6vw,2.2rem); margin:0 0 18px; font-weight:700}
+    .team-grid{display:grid; grid-template-columns:320px 1fr; gap:24px}
+    @media (max-width:980px){.team-grid{grid-template-columns:1fr}}
+    .card{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px}
+    .section-title{font-size:1.1rem; font-weight:700; margin:0 0 12px; padding-bottom:8px; border-bottom:2px solid var(--line)}
+    .leaders{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:16px}
+    @media (max-width:480px){.leaders{grid-template-columns:1fr}}
+    .leader{display:grid; grid-template-rows:auto 1fr; gap:8px; text-align:center}
+    .leader img{width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:8px; border:1px solid var(--line)}
+    .leader .name{font-weight:700}
+    .leader .role{color:var(--muted); font-size:.95rem}
+    .team-lists .block{margin:12px 0}
+    .team-lists .block strong{display:block; margin-bottom:6px}
+    .team-lists ul{margin:0; padding-left:18px}
+    .team-lists li{margin:2px 0}
+    .projects{display:grid; grid-template-columns:repeat(4,1fr); gap:12px}
+    @media (max-width:1280px){.projects{grid-template-columns:repeat(3,1fr)}}
+    @media (max-width:980px){.projects{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:520px){.projects{grid-template-columns:1fr}}
+    .project{position:relative; min-height:180px; border-radius:10px; overflow:hidden; border:1px solid var(--line); background:#ddd center/cover no-repeat}
+    .project a{position:absolute; inset:0; display:block; text-decoration:none}
+    .project .label{position:absolute; left:0; right:0; bottom:0; padding:10px 12px; background:rgba(255,255,255,.88); font-size:.95rem; line-height:1.3; color:var(--ink)}
+    .publist{list-style:none; padding:0; margin:0}
+    .publist li{padding:10px 0; border-bottom:1px dashed var(--line)}
+    .publist a{text-decoration:underline; color:var(--brand)}
+    .funders{display:flex; flex-wrap:wrap; gap:16px; align-items:center}
+    .funders img{height:42px; width:auto; filter:grayscale(30%); opacity:.95}
+    .note{color:var(--muted); font-size:.95rem}
+    </style>
+  
+    <div class="team-page">
+      <h1 class="title">NeuroAI: pollinisation croisée entre les Neurosciences et l’Intelligence Artificielle</h1>
+  
+      <div class="team-grid">
+        <!-- Colonne gauche -->
+        <aside class="col-left">
+          <section class="card">
+            <h2 class="section-title">Responsable</h2>
+            <div class="leaders">
+              <div class="leader">
+                <img src="https://cerco.cnrs.fr/wp-content/uploads/2019/05/tim-e1561107709774.png" alt="Chef d’équipe">
+                <div class="name">Timothée Masquelier</div>
+                <div class="role">Directeur de recherche (DR2)</div>
+                <div class="note">timothee.masquelier@cnrs.fr</div>
+              </div>
+            </div>
+          </section>
+  
+          <section class="card team-lists">
+            <h2 class="section-title">Membres de l’équipe</h2>
+  
+            <div class="block"><strong>Chercheurs</strong>
+              <ul>
+                <li>Andrea Alamia (CR)</li>
+                <li>Victor Boutin (CR)</li>
+                <li>Timothée Masquelier (DR2)</li>
+                <li>Rufin VanRullen (DR1)</li>
+              </ul>
+            </div>
+  
+            <div class="block"><strong>Chercheurs associés</strong>
+              <ul>
+                <li>Arnaud Delorme (Professeur UCSD)</li>
+                <li>Thomas Serre (Professeur Brown University)</li>
+              </ul>
+            </div>
+  
+            <div class="block"><strong>Ingénieur de recherche</strong>
+              <ul>
+                <li>Leslie Marie-Louise</li>
+              </ul>
+            </div>
+  
+            <div class="block"><strong>Doctorants / Post-doctorants</strong>
+              <ul>
+                <li>Grégoire Audry</li>
+                <li>Jan Erik Bellingrath</li>
+                <li>Roland Bertin-Johannet</li>
+                <li>Jorge Chang</li>
+                <li>Yusuf Elhelw</li>
+                <li>Luca Gonzalez-Sommer</li>
+                <li>Raja Kumar</li>
+                <li>Bastien Lelan</li>
+                <li>Jean-Félix Maestrati</li>
+                <li>Adrien Marque</li>
+                <li>Léopold Maytié</li>
+                <li>Alexandre Quéant</li>
+                <li>Ulysse Rancon</li>
+                <li>Tomas de Udaeta</li>
+              </ul>
+            </div>
+          </section>
+  
+          <section class="card">
+            <h2 class="section-title">Thèmes de recherche</h2>
+            <ul>
+              <li>Intelligence Artificielle</li>
+              <li>Apprentissage profond</li>
+              <li>Neurosciences computationnelles</li>
+            </ul>
+          </section>
+        </aside>
+  
+        <!-- Colonne droite -->
+        <main class="col-right">
+          <section class="card">
+            <h2 class="section-title">Présentation</h2>
+            <p>NeuroAI incarne la pollinisation croisée entre les Neurosciences et l’Intelligence Artificielle. D’une part, l’équipe exploite les progrès récents spectaculaires des outils d’IA afin de modéliser plus précisément le traitement cérébral — par exemple, la vision ou les simulations mentales —, d’identifier des motifs dans de vastes ensembles de données fMRI, EEG et MEG, et de les relier aux caractéristiques des stimuli, à la perception, à la cognition, au comportement ou au bien-être. D’autre part, les modèles d’IA récents demeurent des « boîtes noires », encore limitées en termes de généralisation et présentant un coût computationnel considérable (énergie, matériel, données, etc.). Par conséquent, un autre objectif du groupe est de s’inspirer du fonctionnement du cerveau pour concevoir des IA plus interprétables, robustes et frugales — par exemple en intégrant des spikes, des représentations visuelles plus proches de celles de l’humain ou encore une architecture cognitive, vraisemblablement utilisée par le cerveau et connue sous le nom de global workspace.</p>
+          </section>
+  
+          <section class="card">
+            <h2 class="section-title">Projets</h2>
+            <div class="projects">
+              <figure class="project" style="background-image:url('https://via.placeholder.com/800x600.png?text=Neurogram');"><a href="#"></a><figcaption class="label"><strong>Neurogram</strong><br>Évaluation objective de l'audition et des prothèses auditives via les neurosciences et l'IA</figcaption></figure>
+              <figure class="project" style="background-image:url('http://cerco.cnrs.fr/wp-content/uploads/2025/11/NeuroAI-project2-1.png');"><a href="#"></a><figcaption class="label"><strong>ERC GLoW</strong><br>Le Global Latent Workspace: vers des modèles IA plus flexibles</figcaption></figure>
+              <figure class="project" style="background-image:url('https://via.placeholder.com/800x600.png?text=Chaire+C3PO');"><a href="#"></a><figcaption class="label"><strong>Chaire ANITI C3PO</strong><br>Cobots avec Conversation, Cognition et Perception</figcaption></figure>
+              <figure class="project" style="background-image:url('https://via.placeholder.com/800x600.png?text=EEG-FM');"><a href="#"></a><figcaption class="label"><strong>EEG-FM</strong><br>Régler les modèles de fondation sur les fréquences cérébrales</figcaption></figure>
+              <figure class="project" style="background-image:url('https://via.placeholder.com/800x600.png?text=RiMind');"><a href="#"></a><figcaption class="label"><strong>RiMind</strong><br>L’hypothèse du cerveau Riemannien: vers une géométrie de la cognition façonnée par l’expérience</figcaption></figure>
+              <figure class="project" style="background-image:url('http://cerco.cnrs.fr/wp-content/uploads/2025/11/NeuroAI-project6.png');"><a href="#"></a><figcaption class="label"><strong>OSCI-PRED</strong><br>Une perspective de codage prédictif sur la dynamique cérébrale...</figcaption></figure>
+            </div>
+          </section>
+  
+          <section class="card">
+            <h2 class="section-title">Publications (sélection)</h2>
+            <ul class="publist">
+              <li>Béthune, L., et al. (2025). <a href="https://arxiv.org/abs/2505.18230">Follow the Energy, Find the Path: Riemannian Metrics from Energy-Based Models</a>. <em>NeuRIPS</em>.</li>
+              <li>Ferrante, M., et al. (2025). <a href="https://www.nature.com/articles/s42003-025-08706-4">Evidence for compositionality in fMRI visual representations via Brain Algebra</a>. <em>Communications Biology</em>.</li>
+              <li>Schwenk, J.C.B., & Alamia, A. (2025). <a href="https://doi.org/10.1371/journal.pcbi.1013294">A hierarchical multiscale model of forward and backward alpha-band traveling waves in the visual system</a>. <em>PLOS Computational Biology</em>.</li>
+              <li>Rançon, U., Masquelier, T., Cottereau, B.R. (2025). <a href="#">Temporal recurrence as a general mechanism to explain neural responses in the auditory system</a>. <em>Communications Biology</em>.</li>
+              <li>Hammouamri, I., et al. (2024). <a href="https://openreview.net/forum?id=4r2ybzJnmN">Learning Delays in Spiking Neural Networks using Dilated Convolutions with Learnable Spacings</a>. <em>ICLR</em>.</li>
+              <li>Devillers, B., Maytié, L., & VanRullen, R. (2024). <a href="https://ieeexplore.ieee.org/abstract/document/10580966">Semi-supervised multimodal representation learning through a global workspace</a>. <em>IEEE Transactions on Neural Networks and Learning Systems</em>.</li>
+              <li>Alamia, A., et al. (2024). <a href="https://doi.org/10.1016/j.biopsych.2024.11.014">Oscillatory traveling waves provide evidence for predictive coding abnormalities in schizophrenia</a>. <em>Biological Psychiatry</em>.</li>
+              <li>Boutin, V., et al. (2024). <a href="https://arxiv.org/abs/2406.06079">Latent Representation Matters: Human-like Sketches in One-shot Drawing Tasks</a>. <em>NeuRIPS</em>.</li>
+              <li>Delorme, A. (2023). <a href="https://doi.org/10.1038/s41598-023-27528-0">EEG is better left alone</a>. <em>Scientific Reports</em>.</li>
+              <li>Truong, D., et al. (2023). <a href="https://doi.org/10.1109/BIBM58861.2023.10385525">Deep learning applied to EEG data with different montages using spatial attention</a>. <em>IEEE BIBM</em>.</li>
+            </ul>
+          </section>
+  
+          <section class="card">
+            <h2 class="section-title">Financements</h2>
+            <div class="funders">
+              <a href="#"><img src="https://anr.fr/typo3conf/ext/anr_skin/Resources/Public/assets/img/logo-anr-fr-20ans-2x.png" alt="ANR"></a>
+              <a href="#"><img src="https://erc.europa.eu/sites/default/files/inline-images/HE%20logo.png" alt="ERC"></a>
+              <a href="#"><img src="https://aniti.univ-toulouse.fr/wp-content/uploads/2023/06/Capture-decran-2023-06-26-a-09.59.26-1.png" alt="ANITI"></a>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </div>

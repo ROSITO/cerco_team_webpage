@@ -1,0 +1,207 @@
+<div class="team-page-outer">
+    <style>
+    :root{
+      --bg:#f6f7f8; --card:#ffffff; --ink:#1f2937; --muted:#6b7280;
+      --brand:#0f766e; --line:#e5e7eb; --maxw:1200px;
+    }
+    .team-page{background:var(--bg); color:var(--ink); padding:24px; border:1px solid var(--line); border-radius:10px; max-width:var(--maxw); margin:0 auto;}
+    .team-page .title{font-size:clamp(1.6rem,2.6vw,2.2rem); margin:0 0 18px; font-weight:700}
+    .team-grid{display:grid; grid-template-columns:320px 1fr; gap:24px}
+    @media (max-width:980px){.team-grid{grid-template-columns:1fr}}
+    .card{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px}
+    .section-title{font-size:1.1rem; font-weight:700; margin:0 0 12px; padding-bottom:8px; border-bottom:2px solid var(--line)}
+    .leaders{display:flex; gap:24px; margin-bottom:16px; align-items:start}
+    @media (max-width:480px){.leaders{flex-direction:column}}
+    .leader{display:grid; grid-template-rows:auto 1fr; gap:8px; text-align:center; flex:1 1 0; min-width:0; box-sizing:border-box}
+    .leader img{width:100%; max-width:100%; height:200px; min-height:200px; max-height:200px; object-fit:cover; object-position:center; border-radius:8px; border:1px solid var(--line); display:block; box-sizing:border-box}
+    .leader .name{font-weight:700}
+    .leader .role{color:var(--muted); font-size:.95rem}
+    .team-lists .block{margin:12px 0}
+    .team-lists .block strong{display:block; margin-bottom:6px}
+    .team-lists ul{margin:0; padding-left:18px}
+    .team-lists li{margin:2px 0}
+    .projects{display:grid; grid-template-columns:repeat(4,1fr); gap:12px}
+    @media (max-width:1280px){.projects{grid-template-columns:repeat(3,1fr)}}
+    @media (max-width:980px){.projects{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:520px){.projects{grid-template-columns:1fr}}
+    .project{position:relative; min-height:180px; border-radius:10px; overflow:hidden; border:1px solid var(--line); background:#ddd center/cover no-repeat}
+    .project a{position:absolute; inset:0; display:block; text-decoration:none}
+    .project .label{position:absolute; left:0; right:0; bottom:0; padding:10px 12px; background:rgba(255,255,255,.88); font-size:.95rem; line-height:1.3; color:var(--ink)}
+    .publist{list-style:none; padding:0; margin:0}
+    .publist li{padding:10px 0; border-bottom:1px dashed var(--line)}
+    .publist a{text-decoration:underline; color:var(--brand)}
+    .funders{display:flex; flex-wrap:wrap; gap:16px; align-items:center}
+    .funders img{height:42px; width:auto; filter:grayscale(30%); opacity:.95}
+    .note{color:var(--muted); font-size:.95rem}
+    </style>
+  
+    <div class="team-page">
+      <h1 class="title">SV3M : Spatial Vision in Man, Monkey and Machine</h1>
+  
+      <div class="team-grid">
+        <!-- Colonne gauche -->
+        <aside class="col-left">
+  
+          <!-- Responsables -->
+          <section class="card">
+            <h2 class="section-title">Responsables</h2>
+            <div class="leaders">
+              <div class="leader">
+                <img src="https://cerco.cnrs.fr/wp-content/uploads/2021/09/cottereau-845x1024.jpg" alt="Chef d’équipe 1">
+                <div class="name">Benoit Cottereau</div>
+                <div class="role">DR CNRS</div>
+                <div class="note">benoit.cottereau@cnrs.fr</div>
+              </div>
+              <div class="leader">
+                <img src="https://cerco.cnrs.fr/wp-content/uploads/2024/07/JB.jpg" alt="Chef d’équipe 2">
+                <div class="name">Jean-Baptiste Durand</div>
+                <div class="role">DR CNRS</div>
+                <div class="note">jbdurand@cnrs.fr</div>
+              </div>
+            </div>
+          </section>
+  
+          <!-- Membres -->
+          <section class="card team-lists">
+            <h2 class="section-title">Membres de l’équipe</h2>
+  
+            <div class="block">
+              <strong>Enseignants-Chercheurs / Chercheurs / Cliniciens</strong>
+              <ul>
+                <li>Robin Baurès (PU)</li>
+                <li>Vincent Bounes (PUPH – Anesthésiste)</li>
+                <li>Benoit Cottereau (DR CNRS)</li>
+                <li>Sylvain Cremoux (MCF)</li>
+                <li>Jean-Baptiste Durand (DR CNRS)</li>
+                <li>Franck-Emmanuel Roux (PUPH – Neurochirurgien)</li>
+                <li>Alexandra Severac Cauquil (PU)</li>
+                <li>Vincent Soler (PUPH – Ophtalmologiste)</li>
+                <li>Yves Trotter (DRE CNRS)</li>
+              </ul>
+            </div>
+  
+            <div class="block">
+              <strong>Post-doctorants</strong>
+              <ul>
+                <li>Célia Michaud</li>
+                <li>Claire Pouillas</li>
+              </ul>
+            </div>
+  
+            <div class="block">
+              <strong>Doctorants</strong>
+              <ul>
+                <li>Elise Abou-Mirad</li>
+                <li>Tutéa Atger</li>
+                <li>Grégoire Audry</li>
+                <li>Tomas de Udaeta</li>
+                <li>Imène Djidjeli</li>
+                <li>Célia Gislod</li>
+                <li>Alan Guyomarch</li>
+                <li>Geoffroy Keime</li>
+                <li>Alba Langlade</li>
+                <li>Solène Leblond</li>
+                <li>Jean-Félix Maestrati</li>
+                <li>Sarah Marchand</li>
+                <li>Pierre-Marie Matta</li>
+                <li>Ulysse Rançon</li>
+              </ul>
+            </div>
+          </section>
+  
+          <!-- Thèmes -->
+          <section class="card">
+            <h2 class="section-title">Thèmes de recherche</h2>
+            <ul>
+              <li>Perception de la profondeur et du mouvement</li>
+              <li>Cognition spatiale</li>
+              <li>Intégration multisensorielle</li>
+              <li>Navigation</li>
+            </ul>
+          </section>
+  
+        </aside>
+  
+        <!-- Colonne droite -->
+        <main class="col-right">
+  
+          <!-- Présentation -->
+          <section class="card">
+            <h2 class="section-title">Présentation</h2>
+            <p>L’équipe SV3M réunit des enseignants-chercheurs, chercheurs et cliniciens aux compétences complémentaires qui visent à mieux comprendre les mécanismes neuronaux et cognitifs de la perception spatiale. Ensemble, ils développent une approche multi-modèle (humain sain, patient, singe, machine) et pluridisciplinaire (comportement, oculométrie, EEG, stimulation corticale, imagerie fonctionnelle, modélisation). Les travaux explorent la cognition spatiale dans des conditions naturelles, impliquant une ou plusieurs modalités sensorielles (visuelle, vestibulaire, auditive). Ils couvrent la recherche fondamentale comme translationnelle, avec des applications cliniques et technologiques.</p>
+          </section>
+  
+          <!-- Projets -->
+          <section class="card">
+            <h2 class="section-title">Projets</h2>
+            <div class="projects">
+  
+              <figure class="project" style="background-image:url('https://via.placeholder.com/800x600.png?text=InVest');">
+                <a href="https://invest.univ-tlse3.fr/?page_id=57"></a>
+                <figcaption class="label">
+                  <strong>InVest</strong><br>Projet perception visuo-vestibulaire
+                </figcaption>
+              </figure>
+  
+              <figure class="project" style="background-image:url('https://via.placeholder.com/800x600.png?text=PREFER');">
+                <a href="#"></a>
+                <figcaption class="label">
+                  <strong>PREFER</strong><br>Neural bases of primate face recognition
+                </figcaption>
+              </figure>
+  
+              <figure class="project" style="background-image:url('https://via.placeholder.com/800x600.png?text=Space+SNN');">
+                <a href="https://ipal.cnrs.fr/space-snn/"></a>
+                <figcaption class="label">
+                  <strong>Space-SNN</strong><br>Spatial perception with event-based cameras & SNNs
+                </figcaption>
+              </figure>
+  
+            </div>
+          </section>
+  
+          <!-- Publications -->
+          <section class="card">
+            <h2 class="section-title">Publications (sélection)</h2>
+            <ul class="publist">
+              <li>Marchand et al. (2025). Visuo-vestibular integration for self-motion. <em>Experimental Brain Research</em>.</li>
+              <li>Kong et al. (2025). Talk2Event. <em>NeurIPS</em>.</li>
+              <li>Rançon et al. (2025). Temporal recurrence. <em>Communications Biology</em>.</li>
+              <li>Michaud et al. (2025). Motion processing in maculopathy. <em>Journal of Neuroscience</em>.</li>
+              <li>Marchand et al. (2025). Review of GVS. <em>Experimental Brain Research</em>.</li>
+              <li>Matta et al. (2025). Beta oscillations and fatigue. <em>Communications Biology</em>.</li>
+              <li>Kong et al. (2025). EventFly. <em>CVPR</em>.</li>
+              <li>Baurès et al. (2024). Street crossing decision. <em>Journal of Neuroscience Research</em>.</li>
+              <li>Durand et al. (2024). Illusory light and pupil responses. <em>Journal of Vision</em>.</li>
+              <li>Rançon et al. (2024). Auditory ON/OFF model. <em>PLOS Comp Bio</em>.</li>
+              <li>Li et al. (2023). Hand movements & time perception. <em>APP</em>.</li>
+              <li>Xavier et al. (2023). Vestibular signal & binocular vision. <em>Journal of Clinical Medicine</em>.</li>
+              <li>Audurier et al. (2022). Symmetry processing. <em>Cerebral Cortex</em>.</li>
+              <li>Baurès et al. (2020). Time-to-contact. <em>J Neurosci Res</em>.</li>
+              <li>De Castro et al. (2020). CSv connectivity. <em>Cerebral Cortex</em>.</li>
+              <li>Hejja-Brichard et al. (2020). Stereomotion. <em>Cerebral Cortex</em>.</li>
+              <li>Rima et al. (2020). Visuotopic cluster. <em>Brain Structure & Function</em>.</li>
+              <li>Bogdanova et al. (2020). Straight-ahead preference. <em>Brain Structure & Function</em>.</li>
+              <li>Roux et al. (2020). Motor homunculus. <em>The Journal of Physiology</em>.</li>
+              <li>Aedo-Jury et al. (2020). Vestibular input processing. <em>Frontiers in Integrative Neuroscience</em>.</li>
+              <li>Contemori et al. (2019). tRNS & perceptual learning. <em>Neuropsychologia</em>.</li>
+              <li>Caffier et al. (2019). First step estimation. <em>Experimental Aging Research</em>.</li>
+              <li>Maniglia et al. (2019). TMS feedback modulation. <em>Brain Structure & Function</em>.</li>
+              <li>Chauhan et al. (2018). Disparity selectivity via Hebbian learning. <em>Journal of Neuroscience</em>.</li>
+              <li>Roux et al. (2018). Somatosensory homunculus. <em>The Journal of Physiology</em>.</li>
+            </ul>
+          </section>
+  
+          <!-- Financements -->
+          <section class="card">
+            <h2 class="section-title">Financements</h2>
+            <div class="funders">
+              <a href="#"><img src="https://anr.fr/typo3conf/ext/anr_skin/Resources/Public/assets/img/logo-anr-fr-20ans-2x.png" alt="ANR"></a>
+              <a href="#"><img src="https://www.nuclearvalley.com/media/cache/resolve/medium/entreprises/logos/logo-aid-65d74e2311bc4919018085.png" alt="AID"></a>
+            </div>
+          </section>
+  
+        </main>
+      </div>
+    </div>
+  </div>

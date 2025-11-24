@@ -1,0 +1,203 @@
+<div class="team-page-outer">
+    <style>
+    :root{
+      --bg:#f6f7f8; --card:#ffffff; --ink:#1f2937; --muted:#6b7280;
+      --brand:#0f766e; --line:#e5e7eb; --maxw:1200px;
+    }
+    .team-page{background:var(--bg); color:var(--ink); padding:24px; border:1px solid var(--line); border-radius:10px; max-width:var(--maxw); margin:0 auto;}
+    .team-page .title{font-size:clamp(1.6rem,2.6vw,2.2rem); margin:0 0 18px; font-weight:700}
+    .team-grid{display:grid; grid-template-columns:320px 1fr; gap:24px}
+    @media (max-width:980px){.team-grid{grid-template-columns:1fr}}
+    .card{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px}
+    .section-title{font-size:1.1rem; font-weight:700; margin:0 0 12px; padding-bottom:8px; border-bottom:2px solid var(--line)}
+    .leaders{display:grid; grid-template-columns:1fr; gap:12px; margin-bottom:16px}
+    @media (max-width:480px){.leaders{grid-template-columns:1fr}}
+    .leader{display:grid; grid-template-rows:auto 1fr; gap:8px; text-align:center}
+    .leader img{width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:8px; border:1px solid var(--line)}
+    .leader .name{font-weight:700}
+    .leader .role{color:var(--muted); font-size:.95rem}
+    .team-lists .block{margin:12px 0}
+    .team-lists .block strong{display:block; margin-bottom:6px}
+    .team-lists ul{margin:0; padding-left:18px}
+    .team-lists li{margin:2px 0}
+    .projects{display:grid; grid-template-columns:repeat(4,1fr); gap:12px}
+    @media (max-width:1280px){.projects{grid-template-columns:repeat(3,1fr)}}
+    @media (max-width:980px){.projects{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:520px){.projects{grid-template-columns:1fr}}
+    .project{position:relative; min-height:180px; border-radius:10px; overflow:hidden; border:1px solid var(--line); background:#ddd center/cover no-repeat}
+    .project a{position:absolute; inset:0; display:block; text-decoration:none}
+    .project .label{position:absolute; left:0; right:0; bottom:0; padding:10px 12px; background:rgba(255,255,255,.88); font-size:.95rem; line-height:1.3; color:var(--ink)}
+    .publist{list-style:none; padding:0; margin:0}
+    .publist li{padding:10px 0; border-bottom:1px dashed var(--line)}
+    .publist a{text-decoration:underline; color:var(--brand)}
+    .funders{display:flex; flex-wrap:wrap; gap:16px; align-items:center}
+    .funders img{height:42px; width:auto; filter:grayscale(30%); opacity:.95}
+    .note{color:var(--muted); font-size:.95rem}
+    </style>
+  
+    <div class="team-page">
+      <h1 class="title">SLAM : Social, Apprentissage, Audition, Multimodalité</h1>
+  
+      <div class="team-grid">
+        <!-- Colonne gauche -->
+        <aside class="col-left">
+          <section class="card">
+            <h2 class="section-title">Responsable</h2>
+            <div class="leaders">
+              <div class="leader">
+                <img src="https://cerco.cnrs.fr/wp-content/uploads/2019/05/Celine-Cappe-ID-1200x1542.jpg" alt="Chef d’équipe">
+                <div class="name">Celine Cappe</div>
+                <div class="role">Directrice de recherche (DR, CNRS)</div>
+                <div class="note">celine.cappe@cnrs.fr</div>
+              </div>
+            </div>
+          </section>
+  
+          <section class="card team-lists">
+            <h2 class="section-title">Membres de l’équipe</h2>
+  
+            <div class="block">
+              <strong>Chercheurs</strong>
+              <ul>
+                <li>Céline Cappe (DR, CNRS)</li>
+                <li>Mariam Alzaher (MCU)</li>
+                <li>Pascal Barone (DR, CNRS)</li>
+                <li>Olivier Deguine (PU-PH)</li>
+                <li>Pascal Girard (CR, INSERM)</li>
+                <li>Mathieu Marx (PU-PH)</li>
+                <li>Florent Pittet (MCF)</li>
+                <li>Gregor Thut (DR, CNRS)</li>
+                <li>Benedikt Zoefel (CR, CNRS)</li>
+              </ul>
+            </div>
+  
+            <div class="block">
+              <strong>Ingénieur de recherche</strong>
+              <ul>
+                <li>Plénier Anne-Lucie</li>
+              </ul>
+            </div>
+  
+            <div class="block">
+              <strong>Doctorants / Post-doctorants</strong>
+              <ul>
+                <li>Tutea Atger</li>
+                <li>Quentin Busson</li>
+                <li>Matéo Cousin</li>
+                <li>Jules Erkens</li>
+                <li>Vanessa Houze-Cerfon</li>
+                <li>Ram Kumar Pari</li>
+                <li>Solène Leblond</li>
+                <li>Quentin Legois</li>
+                <li>Yann Lemaire</li>
+                <li>Sabrina Stiti</li>
+              </ul>
+            </div>
+          </section>
+  
+          <section class="card">
+            <h2 class="section-title">Thèmes de recherche</h2>
+            <ul>
+              <li>Interactions sociales</li>
+              <li>Apprentissage et mémoire</li>
+              <li>Audition</li>
+              <li>Intégration multisensorielle</li>
+            </ul>
+          </section>
+        </aside>
+  
+        <!-- Colonne droite -->
+        <main class="col-right">
+          <section class="card">
+            <h2 class="section-title">Présentation</h2>
+            <p>L'une des propriétés remarquables du cerveau est sa capacité à modifier le fonctionnement de ses réseaux. Cette propriété de plasticité est à la base du développement cognitif des enfants et du vieillissement normal des personnes âgées. À une autre échelle de temps, ces modifications nous permettent également de nous adapter quotidiennement à un environnement en constante évolution, tant en termes de complexité sensorielle que de changements par rapport à l'objectif à atteindre.</p>
+            <p>Notre équipe étudie la plasticité et les changements cognitifs et comportementaux associés tout au long de la vie (du développement au vieillissement) et à l'aide de différents modèles, chez l'homme, l'animal et les patients. Ces changements sont étudiés à l'aide d'une approche multi-échelle, du neurone (électrophysiologie) au réseau cérébral (IRMf, TEP, fNIRS) et au comportement, et concernent différents systèmes perceptifs et cognitifs.</p>
+            <p>Un aspect de nos recherches se concentre sur la plasticité des systèmes exécutifs et perceptifs induite par la perte sensorielle (dans le cas de la surdité) et l'impact de la rééducation sur cette plasticité. Ces recherches sont menées en étroite collaboration avec le service ORL de l'hôpital Purpan.</p>
+            <p>Chez les enfants, nous étudions la plasticité développementale du système exécutif et de la cognition sociale, ainsi que l'influence de l'apprentissage sur ce développement. L'effet du vieillissement sur la plasticité de la mémoire de travail et de la mémoire épisodique est étudié chez les primates non humains dans une approche comportementale.</p>
+            <p>Nous nous intéressons également au rôle des oscillations de l'activité neuronale dans le traitement auditif et multisensoriel du cerveau, ainsi qu'au rôle des réseaux thalamo-corticaux dans ces processus, chez l'homme et chez les primates non humains. Enfin, notre équipe s'engage fortement dans la valorisation de la recherche sur la rééducation des patients sourds et l'éducation des enfants, grâce à des partenariats avec des fabricants d'appareils auditifs d'une part, et des organismes éducatifs d'autre part.</p>
+          </section>
+  
+          <section class="card">
+            <h2 class="section-title">Projets</h2>
+            <div class="projects">
+              <figure class="project" style="background-image:url('https://via.placeholder.com/800x600.png?text=SLAM+P1');">
+                <a href="#"></a>
+                <figcaption class="label">
+                  <strong>Audition, surdité</strong><br>Plasticité cérébrale dans la surdité
+                </figcaption>
+              </figure>
+  
+              <figure class="project" style="background-image:url('https://via.placeholder.com/800x600.png?text=SLAM+P2');">
+                <a href="#"></a>
+                <figcaption class="label">
+                  <strong>Audition, surdité</strong><br>Rééducation de la surdité
+                </figcaption>
+              </figure>
+  
+              <figure class="project" style="background-image:url('https://via.placeholder.com/800x600.png?text=SLAM+P3');">
+                <a href="#"></a>
+                <figcaption class="label">
+                  <strong>Audition</strong><br>Oscillations neuronales dans le système auditif
+                </figcaption>
+              </figure>
+  
+              <figure class="project" style="background-image:url('https://via.placeholder.com/800x600.png?text=SLAM+P4');">
+                <a href="#"></a>
+                <figcaption class="label">
+                  <strong>Intégration multisensorielle</strong><br>Pulvinar et intégration multisensorielle
+                </figcaption>
+              </figure>
+  
+              <figure class="project" style="background-image:url('https://via.placeholder.com/800x600.png?text=SLAM+P5');">
+                <a href="#"></a>
+                <figcaption class="label">
+                  <strong>Intégration multisensorielle</strong><br>Intégration multisensorielle dans la surdité
+                </figcaption>
+              </figure>
+  
+              <figure class="project" style="background-image:url('https://via.placeholder.com/800x600.png?text=SLAM+P6');">
+                <a href="#"></a>
+                <figcaption class="label">
+                  <strong>Mémoire et vieillissement</strong><br>Déficits de mémoire chez les marmousets vieillissants
+                </figcaption>
+              </figure>
+  
+              <figure class="project" style="background-image:url('https://via.placeholder.com/800x600.png?text=SLAM+P7');">
+                <a href="#"></a>
+                <figcaption class="label">
+                  <strong>Dysfonctionnement social</strong><br>Communication sociale dans le syndrome de Prader-Willi (SPW)
+                </figcaption>
+              </figure>
+  
+              <figure class="project" style="background-image:url('https://via.placeholder.com/800x600.png?text=SLAM+P8');">
+                <a href="#"></a>
+                <figcaption class="label">
+                  <strong>Dysfonctionnement social</strong><br>Traitement sensoriel atypique dans les troubles du spectre autistique (TSA)
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+  
+          <section class="card">
+            <h2 class="section-title">Publications (sélection)</h2>
+            <ul class="publist">
+              <li>Sadoun, A., Rosito, M., Fonta, C., Girard, P. (2019). <a href="https://hal.science/hal-02336007v1">Key periods of cognitive decline in a nonhuman primate model of cognitive aging, the common marmoset (Callithrix jacchus)</a>. <em>Neurobiology of Aging</em>, 74:1–14.</li>
+              <li>Vittek, A.L., Juan, C., Nowak, L.G., Girard, P., Cappe, C. (2023). <a href="https://cnrs.hal.science/hal-03869543/document">Multisensory integration in neurons of the medial pulvinar of macaque monkey</a>. <em>Cerebral Cortex</em>, 33(8):4202–4215.</li>
+              <li>Zoefel, B., Abbasi, O., Gross, J., Kotz, S.A. (2024). <a href="https://hal.science/hal-04757140v2/file/Zoefe_2024.pdf">Entrainment echoes in the cerebellum</a>. <em>PNAS</em>, 121:e2411167121.</li>
+              <li>Adam, N., Blaye, A., Gulbinate, R., Chabe-Ferret, S., Farrer, C. (2022). <a href="https://hal.inrae.fr/hal-03727822/document">A multidimensional evaluation of the benefits of an ecologically realistic training on preschoolers’ control and self-regulation: From behavior to the underlying theta neuro-oscillatory activity</a>. <em>Journal of Experimental Child Psychology</em>, 216:105348.</li>
+              <li>Strelnikov, K., Debladis, J., Salle, J., Valette, M., Cortadellas, J., Tauber, M., Barone, P. (2023). <a href="https://doi.org/10.1093/braincomms/fcad138">Amygdala hyperactivation relates to eating behavior: a potential indicator of food addiction in Prader-Willi syndrome</a>. <em>Brain Communication</em>, 5(3).</li>
+              <li>Karoui, K., Strelnikov, K., Payoux, P., Salabert, A.-S., Deguine, O., Barone, P., Marx, M. (2023). <a href="https://doi.org/10.1093/cercor/bhac204">Cortical processing for sound location is restored after cochlear implantation in asymmetric hearing loss. Evidence from a PET H<sub>2</sub>O<sub>15</sub> study</a>. <em>Cerebral Cortex</em>, 5(1):2229–2244.</li>
+            </ul>
+          </section>
+  
+          <section class="card">
+            <h2 class="section-title">Financements</h2>
+            <div class="funders">
+              <a href="#"><img src="https://anr.fr/typo3conf/ext/anr_skin/Resources/Public/assets/img/logo-anr-fr-20ans-2x.png" alt="ANR"></a>
+              <a href="#"><img src="https://respifil.fr/wp-content/uploads/2021/06/phrc-06-21.jpg" alt="PHRC"></a>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </div>

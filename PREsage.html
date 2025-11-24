@@ -1,0 +1,148 @@
+<div class="team-page-outer">
+    <style>
+    :root{
+      --bg:#f6f7f8; --card:#ffffff; --ink:#1f2937; --muted:#6b7280;
+      --brand:#0f766e; --line:#e5e7eb; --maxw:1200px;
+    }
+    .team-page{background:var(--bg); color:var(--ink); padding:24px; border:1px solid var(--line); border-radius:10px; max-width:var(--maxw); margin:0 auto;}
+    .team-page .title{font-size:clamp(1.6rem,2.6vw,2.2rem); margin:0 0 18px; font-weight:700}
+    .team-grid{display:grid; grid-template-columns:320px 1fr; gap:24px}
+    @media (max-width:980px){.team-grid{grid-template-columns:1fr}}
+    .card{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px}
+    .section-title{font-size:1.1rem; font-weight:700; margin:0 0 12px; padding-bottom:8px; border-bottom:2px solid var(--line)}
+    .leaders{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:16px}
+    @media (max-width:480px){.leaders{grid-template-columns:1fr}}
+    .leader{display:grid; grid-template-rows:auto 1fr; gap:8px; text-align:center}
+    .leader img{width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:8px; border:1px solid var(--line)}
+    .leader .name{font-weight:700}
+    .leader .role{color:var(--muted); font-size:.95rem}
+    .team-lists .block{margin:12px 0}
+    .team-lists .block strong{display:block; margin-bottom:6px}
+    .team-lists ul{margin:0; padding-left:18px}
+    .team-lists li{margin:2px 0}
+    .projects{display:grid; grid-template-columns:repeat(4,1fr); gap:12px}
+    @media (max-width:1280px){.projects{grid-template-columns:repeat(3,1fr)}}
+    @media (max-width:980px){.projects{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:520px){.projects{grid-template-columns:1fr}}
+    .project{position:relative; min-height:180px; border-radius:10px; overflow:hidden; border:1px solid var(--line); background:#ddd center/cover no-repeat}
+    .project a{position:absolute; inset:0; display:block; text-decoration:none}
+    .project .label{position:absolute; left:0; right:0; bottom:0; padding:10px 12px; background:rgba(255,255,255,.88); font-size:.95rem; line-height:1.3; color:var(--ink)}
+    .publist{list-style:none; padding:0; margin:0}
+    .publist li{padding:10px 0; border-bottom:1px dashed var(--line)}
+    .publist a{text-decoration:underline; color:var(--brand)}
+    .funders{display:flex; flex-wrap:wrap; gap:16px; align-items:center}
+    .funders img{height:42px; width:auto; filter:grayscale(30%); opacity:.95}
+    .note{color:var(--muted); font-size:.95rem}
+    </style>
+  
+    <div class="team-page">
+      <h1 class="title">PRESAGE : Marqueurs prédictifs dans le vieillissement et les maladies neurodégénératives</h1>
+  
+      <div class="team-grid">
+        <!-- Colonne gauche -->
+        <aside class="col-left">
+          <section class="card">
+            <h2 class="section-title">Responsable</h2>
+            <div class="leaders">
+              <div class="leader">
+                <img src="https://cerco.cnrs.fr/wp-content/uploads/2019/05/Remy-e1561121941903.png" alt="Chef d’équipe">
+                <div class="name">Florence Rémy</div>
+                <div class="role">Professeure des Universités (PU)</div>
+                <div class="note">florence.remy@univ-tlse3.fr</div>
+              </div>
+            </div>
+          </section>
+  
+          <section class="card team-lists">
+            <h2 class="section-title">Membres de l’équipe</h2>
+  
+            <div class="block"><strong>Chercheurs / Enseignants-Chercheurs</strong>
+              <ul>
+                <li>Isabelle Berry (PU-PH)</li>
+                <li>Caroline Fonta (DR CNRS Émérite)</li>
+                <li>Muriel Mescam (MCU)</li>
+                <li>Camille Muller (MCU)</li>
+                <li>Florence Rémy (PU)</li>
+              </ul>
+            </div>
+  
+            <div class="block"><strong>Ingénieur de recherche</strong>
+              <ul>
+                <li>Adrien Marque</li>
+              </ul>
+            </div>
+  
+            <div class="block"><strong>Assistant CHU</strong>
+              <ul>
+                <li>Hugo Grenier</li>
+              </ul>
+            </div>
+  
+            <div class="block"><strong>Doctorants / Post-doctorants</strong>
+              <ul>
+                <li>Costanza Carlotta Cerrano</li>
+                <li>Marie Fourteau</li>
+                <li>Harshit Harshit</li>
+                <li>Adrian Ruiz-Chiapello</li>
+              </ul>
+            </div>
+          </section>
+  
+          <section class="card">
+            <h2 class="section-title">Thèmes de recherche</h2>
+            <ul>
+              <li>Caractérisation du vieillissement cérébral chez le marmouset</li>
+              <li>Neuromodulation dans le vieillissement</li>
+              <li>Méthodes innovantes pour la neuroimagerie</li>
+              <li>Évolution du cerveau humain</li>
+            </ul>
+          </section>
+        </aside>
+  
+        <!-- Colonne droite -->
+        <main class="col-right">
+          <section class="card">
+            <h2 class="section-title">Présentation</h2>
+            <p>L’équipe PresAge s’intéresse aux marqueurs morphologiques et fonctionnels qui caractérisent et prédisent le vieillissement cérébral et cognitif, ainsi que les pathologies neurodégénératives. Nos projets étudient deux modèles : le singe marmouset (<em>Callithrix jacchus</em>) et l’humain. Les marqueurs cérébraux sont principalement mesurés par IRM multi-modale, tels que les volumes de substance grise et blanche, la myéline, la dynamique des flux (sang et LCS), la neuromodulation (tonique et phasique). Nous nous intéressons aussi aux marqueurs physiologiques (marqueurs oculométriques, marqueurs cardiaques) et cognitifs (tâches de mémoire ciblées) du vieillissement, ainsi qu’aux mécanismes de la neuroinflammation.</p>
+            <p>Certains de nos travaux utilisent des approches longitudinales, tout au long de la vie adulte. Nous développons également des méthodes innovantes pour l’analyse et le traitement des biomarqueurs mesurés, telles que les techniques de super-résolution et l’apprentissage par réseaux de neurones.</p>
+          </section>
+  
+          <section class="card">
+            <h2 class="section-title">Projets</h2>
+            <div class="projects">
+              <figure class="project" style="background-image:url('http://cerco.cnrs.fr/wp-content/uploads/2025/11/Presage-project_1.jpg');"><a href="#"></a><figcaption class="label"><strong>Modèle Marmouset</strong><br>Le modèle marmouset pour l’exploration du vieillissement cérébral</figcaption></figure>
+              <figure class="project" style="background-image:url('http://cerco.cnrs.fr/wp-content/uploads/2025/11/Presage-project_2.jpg');"><a href="#"></a><figcaption class="label"><strong>EndoMap</strong><br>L’évolution du cerveau humain à travers l’étude des endocastes</figcaption></figure>
+              <figure class="project" style="background-image:url('http://cerco.cnrs.fr/wp-content/uploads/2025/11/Presage-project_3.jpg');"><a href="#"></a><figcaption class="label"><strong>LC-Age</strong><br>Locus coeruleus et modulation noradrénergique dans le vieillissement</figcaption></figure>
+            </div>
+          </section>
+  
+          <section class="card">
+            <h2 class="section-title">Publications (sélection)</h2>
+            <ul class="publist">
+              <li>Arribarat G., Mescam M., Desmoulin F., Fonta C. (2025). <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12330867/">Arterial and venous flow dynamics are modified by age in the non-human primate</a>. <em>Imaging Neuroscience</em>, 3.</li>
+              <li>Causse M., Lepron E., Mandrick K., Peysakhovich V., Berry I., et al. (2022). <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8764488/">Facing successfully high mental workload and stressors: An fMRI study</a>. <em>Human Brain Mapping</em>, 43(3), 1011–1031.</li>
+              <li>de Jager E.J., Risser L., Mescam M., Fonta C., Beaudet A. (2022). <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9435008/">Sulci 3D mapping from human cranial endocasts: A powerful tool to study hominin brain evolution</a>. <em>Human Brain Mapping</em>.</li>
+              <li>Bazzi F., Mescam M., Diab A., Falou O., Amoud H., et al. (2021). <a href="https://onlinelibrary.wiley.com/doi/10.1002/mrm.28881">Marmoset brain segmentation from deconvolved magnetic resonance images and estimated label maps</a>. <em>Magnetic Resonance in Medicine</em>, 86(5), 2766–2779.</li>
+              <li>Causse M., Chua Z.K., Rémy F. (2019). <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6531547/">Influences of age, mental workload, and flight experience on cognitive performance and prefrontal activity in private pilots: a fNIRS study</a>. <em>Scientific Reports</em>, 9(1).</li>
+              <li>de Jager E., van Schoor A., Hoffman J., Oettlé A., Fonta C., et al. (2019). <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6742888/">Sulcal pattern variation in extant human endocasts</a>. <em>Journal of Anatomy</em>, 235(4), 803–810.</li>
+              <li>Risser L., Sadoun A., Mescam M., Strelnikov K., Lebreton S., et al. (2019). <a href="https://link.springer.com/article/10.1007/s00429-019-01869-x">In vivo localization of cortical areas using a 3D computerized atlas of the marmoset brain</a>. <em>Brain Structure and Function</em>, 224(5), 1957–1969.</li>
+            </ul>
+          </section>
+  
+          <section class="card">
+            <h2 class="section-title">Financements</h2>
+            <div class="funders">
+              <a href="#"><img src="https://anr.fr/typo3conf/ext/anr_skin/Resources/Public/assets/img/logo-anr-fr-20ans-2x.png" alt="ANR"></a>
+              <a href="#"><img src="https://www.laregion.fr/local/cache-gd2/36/b8499bf067f01a821ac4d31ef82681.webp?1748353894" alt="Région Occitanie"></a>
+              <a href="#"><img src="https://www.fondation-alzheimer.org/wp-content/themes/alzheimer/images/logo.png" alt="Fondation Vaincre Alzheimer"></a>
+              <a href="#"><img src="https://www.fondationdelavenir.org/wp-content/themes/fondation-avenir/assets/images/logo-fondation-avenir.svg" alt="Fondation de l'Avenir"></a>
+              <a href="#"><img src="https://fundit.fr/sites/default/files/styles/max_650x650/public/institutions/capture-decran-2022-12-23-085845.png?itok=Cc3iKGD8" alt="CNRS MITI"></a>
+              <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Siemens_Healthineers_logo.svg/330px-Siemens_Healthineers_logo.svg.png" alt="Siemens Healthineers"></a>
+              <a href="#"><img src="https://www.suricog.fr/wp-content/uploads/2022/02/cropped-logo-suricog-1-1-2-300x100.png" alt="Suricog"></a>
+              <a href="#"><img src="https://www.phode.com/wp-content/uploads/2024/10/EGI12.R1-Logo-Phode-bleu-horizontal.jpg" alt="Laboratoires Phodé"></a>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </div>
