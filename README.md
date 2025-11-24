@@ -56,7 +56,37 @@ SLAM: https://cerco.cnrs.fr/en/slam-2/
   - Centrage de la photo avec `margin:0 auto!important`
   - Modification du CSS pour utiliser `width:150px` au lieu de `width:100%`
 
+## 7. Création et amélioration de la page équipe
+- **Tâche** : Amélioration du tableau de logos des équipes et services
+- **Améliorations visuelles** :
+  - Images rondes avec `border-radius: 50%`
+  - Bordures et ombres pour un rendu plus propre
+  - Effet hover avec agrandissement et ombre renforcée
+  - Espacement optimisé entre les logos (`border-spacing: 12px`)
+- **Problème du cadre noir** : WordPress affichait un cadre noir autour du tableau
+  - **Solution** : Ajout de règles CSS avec `!important` pour supprimer toutes les bordures (`border: none !important` sur `table`, `td`, `th`, `tr`, et `.wp-block-table`)
+- **Mise à jour des logos** :
+  - NeuroAI : `neuroai_logo_final_color2-1.png`
+  - PresAge : `PresAge_logo.png`
+  - SLAM : `LogoSLAMV2-1.png`
+  - S!C : `Logo_SIC_Rond.png`
+- **Problème de visibilité du logo NeuroAI** : Le bas du logo était coupé
+  - **Solution** : Utilisation de `object-fit: contain` au lieu de `cover` pour le logo NeuroAI uniquement, permettant de voir l'image entière dans le cercle de 150px
+
+## 8. Création de la version anglaise de la page équipe
+- **Tâche** : Création de `equipe_EN.html` avec les mêmes logos et structure que la version française
+- **Contenu** : Utilisation des noms et liens anglais fournis :
+  - NeuroAI → `/en/neuroai-2/`
+  - DYNAMO → `/en/dynamo-2/`
+  - PresAge → `/en/presage-2/` - "Predictive Markers in Ageing and Neurodegeneration"
+  - SV3M → `/en/sv3m-2/`
+  - SLAM → `/en/slam-2/`
+  - S!C → "IT and Communication" → `/les-equipes/it-and-communication`
+  - MRI Platform → `/irm-platform`
+  - Administration & Finance → `/administration-and-finance/`
+
 ## Notes techniques
 - Toutes les pages anglaises utilisent maintenant un format ultra-compact (une seule ligne) pour éviter les transformations WordPress
 - Les pages françaises fonctionnent avec le format normal (sauts de ligne), sauf SIC.html qui a nécessité la compression pour WordPress
 - Utilisation de `!important` dans les CSS pour forcer l'application des styles malgré les styles WordPress
+- La page équipe utilise un CSS embarqué pour contrôler le style du tableau et des logos, avec support responsive
